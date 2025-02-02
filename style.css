@@ -13,7 +13,7 @@ html {
 }
 
 .gt_container {
-    background-image: url(/source/gt/gt-nen.png);
+    background-image: url(./source/gt/gt-nen.png);
     background-repeat: no-repeat;
     
     border-radius: 1.5rem;
@@ -54,7 +54,7 @@ html {
 }
 
 .gt_desc {
-    background-image: url(/source/gt/nen-chu.svg);
+    background-image: url(./source/gt/nen-chu.svg);
     background-repeat: no-repeat;
     background-size: contain;
     padding: 20px;
