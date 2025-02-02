@@ -1,0 +1,241 @@
+html {
+    font-family: ui-sans-serif,system-ui,sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav_bar {
+    margin-bottom: 100px;
+}
+
+.gt_container {
+    background-image: url(/source/gt/gt-nen.png);
+    background-repeat: no-repeat;
+    
+    border-radius: 1.5rem;
+    background-size: cover;
+}
+
+.special {
+    font-size: 1.5rem;
+    line-height: 56px;
+    color: #fff;
+    --tw-gradient-from: #fbb935;
+    --tw-gradient-to: #a863ff;
+    background-image: linear-gradient(to right, var(--tw-gradient-from), var(--tw-gradient-to));
+    width: 340px;
+    text-align: center;
+    border-radius: 14px;
+    height: 56px;
+    font-weight: 500;
+    
+
+    margin: 0 auto;
+
+    position: relative;
+    transform: translate(0, -28px);
+
+}
+
+.special img {
+    vertical-align: middle;
+    padding-bottom: 6px;
+}
+
+.gt_item {
+    margin: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.gt_desc {
+    background-image: url(/source/gt/nen-chu.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 20px;
+    width: 300px;
+
+    text-align: center;
+    background-position: center;
+
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 550;
+}
+
+.gt_img {
+    aspect-ratio: 1 / 1;
+    width: 40%;
+    
+}
+
+@media (min-width: 1023px) {
+    .a1 {
+        margin-top: 70px;
+    }
+}
+
+.room_container {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+.room_item {
+    width: 95%;
+    max-width: 400px;
+    border-radius: 26px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 0px 20px rgba(129, 75, 217, 0.425);
+    
+    margin: 20px auto;
+    position: relative;
+
+    opacity: 0.3;
+    transform: scale(0.6) translateY(-50px);
+    transition: opacity 3s ease, transform 5s ease;
+}
+
+.room_item.visible {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+}
+
+.room_border {
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.room_image {
+    margin: 4px 4px 0px 4px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 30px 30px 0 0;
+}
+
+
+
+.room_image img {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.room_content {
+    padding: 10px 20px 16px;
+}
+
+.tag {
+    display: inline-block;
+    --tw-gradient-from: #3545fb;
+    --tw-gradient-to: #a863ff;
+    background-image: linear-gradient(to right, var(--tw-gradient-from), var(--tw-gradient-to));
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 10px;
+
+    cursor: pointer;
+    margin: 8px;
+}
+
+.tag:hover {
+    color: #110050;
+    --tw-gradient-from: #3545fb7f;
+    --tw-gradient-to: #a963ff8e;
+    background-image: linear-gradient(to left, var(--tw-gradient-from), var(--tw-gradient-to));
+}
+
+.room_desc1 {
+    font-size: 16px;
+    margin: 4px 0;
+    font-weight: bold;
+}
+
+.room_desc2 {
+    font-size: 14px;
+    color: gray;
+}
+
+/* Liên hệ */
+
+.contact {
+    margin-bottom: 50%;
+}
+.contact_container {
+    border-radius: 10px;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.468);
+    padding: 20px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.contact_item_1 {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+.contact_item_1 .anh {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #c8adee;
+}
+.contact_item_1 h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+.contact_item_1 p {
+    font-size: 14px;
+    color: #555;
+}
+.italic {
+    font-style: italic;
+}
+
+.contact_item_2 {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto 16px;
+    width: 80%;
+}
+.contact_item_2 a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #232eaa;
+    border: 2px solid #232eaa;
+    padding: 10px 20px;
+    margin: 12px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.contact_item_2 a:hover {
+    background-color: #232eaa;
+    color: white;
+}
+.contact_item_2 img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+@media (max-width: 1023px) {
+    .contact_item_2 a {
+        padding-left: 20%;
+    }
+}
