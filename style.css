@@ -8,9 +8,47 @@ html {
     box-sizing: border-box;
 }
 
-.nav_bar {
-    margin-bottom: 100px;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    background: white;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+    margin-bottom: 36px;
 }
+
+.navbar img {
+    height: 72px;
+    margin-top: 8px;
+}
+
+.navbar_menu {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar_menu .navbar_item {
+    text-decoration: none;
+    color: black;
+    font-weight: 460;
+    font-size: 16px;
+    display: flex;
+    align-items: center; 
+}
+
+.navbar_menu .navbar_item:hover {
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+    color: rgb(156 61 245);
+}
+
 
 .gt_container {
     background-image: url(./source/gt/gt-nen.png);
@@ -82,7 +120,6 @@ html {
 
 .room_container {
     margin-top: 5%;
-    margin-bottom: 5%;
 }
 
 
@@ -169,6 +206,7 @@ html {
 /* Liên hệ */
 
 .contact {
+    margin-top: 5%;
     margin-bottom: 50%;
 }
 .contact_container {
