@@ -224,6 +224,8 @@ html {
 
 .special {
     font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
     line-height: 56px;
     color: #fff;
     --tw-gradient-from: #fbb935;
@@ -233,9 +235,7 @@ html {
     text-align: center;
     border-radius: 14px;
     height: 56px;
-    font-weight: 500;
     
-
     margin: 0 auto;
 
     position: relative;
@@ -246,6 +246,7 @@ html {
 .special img {
     vertical-align: middle;
     padding-bottom: 6px;
+    height: 45px;
 }
 
 .gt_item {
