@@ -166,8 +166,8 @@ html {
 .sidebar_item {
     font-size: 24px;
     padding: 16px;
-    border-bottom: 2px solid #4400ff;
-    width: 100%;
+    border-bottom: 1px solid #4400ff78;
+    width: 90%;
     justify-content: center;
     display: flex;
     text-decoration: none;
