@@ -185,8 +185,8 @@ html {
 }
 
 .item_ct a {
-    height: 60px;
-    width: 60px;
+    height: 80px;
+    width: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -195,15 +195,15 @@ html {
 }
 
 .item_ct a img {
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
     background-color: #232eaa;
     border-radius: 50%;
 }
 
 .item_ct a img:hover {
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
 }
 
 .sidebar_overlay {
