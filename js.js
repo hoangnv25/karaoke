@@ -35,29 +35,33 @@ navBar.addEventListener('click', () => {
     overlay.classList.remove("hide");
 });
 
-let index = 0;
-    const slides = document.querySelectorAll('.room_img_play');
+// Cuộn ảnh phòng
+const slides = document.querySelectorAll('.room_img_play');
+setInterval(() => {
+    slides[0].style.transform = 'translateX(-100%)';
+    slides[1].style.transform = 'translateX(-100%)';
+    slides[1].style.opacity = 1;
 
-    setInterval(() => {
-        slides[0].style.transform = 'translateX(-100%)';
-        slides[1].style.transform = 'translateX(-100%)';
-        slides[1].style.opacity = 1;
+    setTimeout(() => {
+        slides[0].style.transform = 'translateX(100%)';
+        slides[0].style.opacity = 0;
+        
+    }, 1000);
 
-        setTimeout(() => {
-            slides[0].style.transform = 'translateX(100%)';
-            slides[0].style.opacity = 0;
-            
-        }, 1000);
+    setTimeout(() => {
+        slides[0].style.opacity = 1;
+        slides[0].style.transform = 'translateX(0%)';
+        slides[1].style.transform = 'translateX(-200%)';
+    }, 2000);
 
-        setTimeout(() => {
-            slides[0].style.opacity = 1;
-            slides[0].style.transform = 'translateX(0%)';
-            slides[1].style.transform = 'translateX(-200%)';
-        }, 2000);
+    setTimeout(() => {
+        slides[1].style.transform = 'translateX(0%)';
+        slides[1].style.opacity = 0;
+    }, 3000);
 
-        setTimeout(() => {
-            slides[1].style.transform = 'translateX(0%)';
-            slides[1].style.opacity = 0;
-        }, 3000);
+}, 4000);
 
-    }, 4000);
+// git init
+// git add .
+// git commit -m "h"
+// git push
