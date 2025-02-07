@@ -227,8 +227,11 @@ html {
 
 .special {
     font-size: 1.4rem;
-    font-family:'Courier New', Courier, monospace;
-    font-weight: 600;
+    font-family: "Jura", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  
     line-height: 56px;
     max-width: 360px;
     width: 98%;
