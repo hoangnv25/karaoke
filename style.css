@@ -182,6 +182,7 @@ html {
 
 .item_ct {
     border-bottom: none;
+    margin-top: 16px;
 }
 
 .item_ct a {
@@ -320,15 +321,18 @@ html {
     margin: 4px 4px 0px 4px;
     overflow: hidden;
     position: relative;
-    border-radius: 30px 30px 0 0;
+    border-radius: 22px 22px 0 0;
+    
+    display: flex;
 }
 
 
 
 .room_image img {
     width: 100%;
+    height: auto;
     object-fit: cover;
-    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
 }
 
 .room_content {
