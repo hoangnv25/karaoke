@@ -13,6 +13,15 @@ window.addEventListener('scroll', function() {
     });
 });
 
+const gtItems = document.querySelectorAll('.gt_item');
+window.addEventListener('scroll', function() {
+    gtItems.forEach(gtItem => {
+        const rect = gtItem.getBoundingClientRect();
+        if(rect.top >= -400 && rect.bottom <= 800) {
+            gtItem.classList.add('visible_gt');
+        }
+    });
+} );
 
 // xử lý đóng sidebar
 const clickHide = document.querySelectorAll('.x, .logo, .clickhide, .sidebar_item a, .sidebar_overlay')

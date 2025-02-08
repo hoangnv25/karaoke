@@ -266,8 +266,9 @@ html {
     background-image: url(./source/gt/nen-chu.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    padding: 20px;
-    width: 300px;
+    padding: 22px 0px 26px 0px;
+    max-width: 300px;
+    width: 80%;
 
     text-align: center;
     background-position: center;
@@ -275,6 +276,7 @@ html {
     color: #fff;
     text-transform: uppercase;
     font-weight: 550;
+    font-size: 14px;
 }
 
 .gt_img {
@@ -289,6 +291,36 @@ html {
     }
 }
 
+@media (max-width: 400px) {
+    .gt_desc {
+        padding: 12px 12px 16px 12px;
+        max-width: 300px;
+        width: 90%;    
+        font-weight: 500;
+        font-size: 12px;
+    }
+}
+
+
+.gt_left {
+    transform: translateX(-80%);
+    opacity: 0;
+}
+
+.gt_right {
+    transform: translateX(80%);
+    opacity: 0;
+}
+
+
+.visible_gt {
+    transform: translateX(0%);
+    opacity: 1;
+    transition: opacity 2s, transform 2s ease;
+
+}
+
+/* room */
 .room_container {
     margin-top: 5%;
 }
