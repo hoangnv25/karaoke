@@ -305,17 +305,20 @@ html {
 .gt_left {
     transform: translateX(-80%);
     opacity: 0;
+    scale: 0;
 }
 
 .gt_right {
     transform: translateX(80%);
     opacity: 0;
+    scale: 0;
 }
 
 
 .visible_gt {
     transform: translateX(0%);
     opacity: 1;
+    scale: 1;
     transition: opacity 2s, transform 2s ease;
 
 }
