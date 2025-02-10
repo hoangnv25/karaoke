@@ -421,7 +421,7 @@ html {
 
 .contact {
     margin-top: 5%;
-    margin-bottom: 50%;
+    margin-bottom: 100px;
 }
 .contact_container {
     border-radius: 10px;
@@ -523,4 +523,14 @@ html {
 ::-webkit-scrollbar {
     width: 0; 
     height: 0; 
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    color: #555555c3;
+    font-style: italic;
+    line-height: 50px;
+    
 }
