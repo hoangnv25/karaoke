@@ -6,9 +6,9 @@ window.addEventListener('scroll', function() {
     const rect = roomContainer.getBoundingClientRect();
     roomItems.forEach(roomItem => {
         if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-            roomItem.classList.add('visible'); // Thêm lớp visible khi cuộn tới
+            roomItem.classList.add('visible'); 
         } else {
-            roomItem.classList.remove('visible'); // Xóa lớp visible khi không còn trong viewport
+            roomItem.classList.remove('visible'); 
         }
     });
 });

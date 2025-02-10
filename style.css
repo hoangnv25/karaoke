@@ -509,3 +509,8 @@ html {
         margin: 12px auto;
     }
 }
+
+::-webkit-scrollbar {
+    width: 0; 
+    height: 0; 
+}
