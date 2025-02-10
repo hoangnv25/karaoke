@@ -510,6 +510,16 @@ html {
     }
 }
 
+@media (max-width: 504px) {
+    .contact_item_2 {
+        width: 90%;
+    }
+
+    .contact_item_2 a {
+        width: 100%;
+    }
+}
+
 ::-webkit-scrollbar {
     width: 0; 
     height: 0; 
